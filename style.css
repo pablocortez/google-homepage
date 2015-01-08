@@ -3,6 +3,10 @@ html {
     margin: 0;
 }
 
+body {
+    font-family: arial,sans-serif;    
+}
+
 .container {
     padding: 0;
     margin: 0;
@@ -17,6 +21,7 @@ nav a {
     display: inline-block;
     text-decoration: none;
     color: #404040;
+    font-size: 13px;
     margin-left: 5px;
     padding: 0;
 }
@@ -26,7 +31,7 @@ nav a:hover {
 }
 
 .navbar {
-    border: 1px dashed yellow;  
+    border: 1px dashed blue;  
     padding: 0;
     margin-right: 0;
 }
@@ -41,4 +46,32 @@ nav a:hover {
 .Logo img {
     height: 95px;
     width: 269px;    
+}
+
+.Search {
+    text-align: center;
+    /*border: 1px solid green;*/
+    margin-bottom: 15px;
+    width: 570px;
+    height: 29px;
+}
+
+input[type=text] {
+  font-size: 15px;
+  padding: 0 0 0 4px;
+  display:inline-block;
+  float: left;
+  width: 535px;
+  height: 27px;
+  border-top:    1px solid #DCDCDC;
+  border-right:  none;
+  border-bottom: 1px solid #DCDCDC;
+  border-left:   1px solid #DCDCDC;
+    &:focus {
+    outline: none;
+    border-top:    1px solid #4285F4;
+    border-right:  none;
+    border-bottom: 1px solid #4285F4;
+    border-left:   1px solid #4285F4;
+  }
 }
